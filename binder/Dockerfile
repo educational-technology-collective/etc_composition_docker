@@ -10,7 +10,7 @@ USER ${NB_USER}
 
 ENV STATIC_FILE_HANDLER_PUBLIC_DIR ${HOME}/public
 
-RUN if test -d ./tmp/etc_jupyterlab_telemetry; then rm -rf ./tmp/etc_jupyterlab_telemetry; fi && \
+RUN pip install build && if test -d ./tmp/etc_jupyterlab_telemetry; then rm -rf ./tmp/etc_jupyterlab_telemetry; fi && \
 git clone https://github.com/educational-technology-collective/etc_jupyterlab_telemetry.git ./tmp/etc_jupyterlab_telemetry && \
 python -m build ./tmp/etc_jupyterlab_telemetry && \
 pip install ./tmp/etc_jupyterlab_telemetry/dist/etc_jupyterlab_telemetry-*-py3-none-any.whl

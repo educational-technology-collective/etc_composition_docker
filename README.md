@@ -33,4 +33,4 @@ Add an `A` tag to your `index.html` file with the `href` attribute assigned to t
 <a href="https://mybinder.org/v2/gh/educational-technology-collective/etc_composition_docker.git/main?urlpath=lab&filepath=Untitled.ipynb">JupyterLab Notebook</a>
 ```
 
-Thu Jul  8 02:59:05 PM EDT 2021
+Thu Jul  8 03:28:29 PM EDT 2021

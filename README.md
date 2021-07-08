@@ -1,6 +1,6 @@
 # ETC Composition Docker
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/educational-technology-collective/etc_composition_docker/main?filepath=Untitled.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/educational-technology-collective/etc_composition_docker.git/main?urlpath=lab&filepath=Untitled.ipynb)
 
 # ETC Composition Docker
 

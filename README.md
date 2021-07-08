@@ -21,7 +21,7 @@ You can then place your `index.html` file in the document root folder.  Tornado 
 
 ### URL Paths
 The URL path that will load the `index.html` in the specified document root is:
-https://mybinder.org/v2/gh/educational-technology-collective/etc_composition_docker.git/main?urlpath=public_html/index.html
+https://mybinder.org/v2/gh/educational-technology-collective/etc_composition_docker.git/main?urlpath=public-html/index.html
 
 The URL Path that will load the JuptyerLab Notebook that is in the root of the Binder-ready repository is:
 https://mybinder.org/v2/gh/educational-technology-collective/etc_composition_docker.git/main?urlpath=lab&filepath=Untitled.ipynb

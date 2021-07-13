@@ -1,0 +1,27 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+
+arviz
+bokeh
+conda
+ipykernel
+ipython
+jupyterhub
+jupyterlab
+matplotlib
+nose
+numpy
+pandas
+pymc3
+scikit-image
+scikit-learn
+scipy
+seaborn
+statsmodels
+urllib3
+jupyter_console
+jupyter_client
+jupyterlab_server
+ipython_genutils
+jupyter-server-proxy

@@ -18,7 +18,7 @@ mkdir ./tmp && \
 git clone https://github.com/educational-technology-collective/etc_jupyterlab_http_static_file_handler.git ./tmp/etc_jupyterlab_http_static_file_handler && \
 python -m build ./tmp/etc_jupyterlab_http_static_file_handler && \
 pip install ./tmp/etc_jupyterlab_http_static_file_handler/dist/etc_jupyterlab_http_static_file_handler-*-py3-none-any.whl
-##  This layer adds the HTTP capabilities to the Binder deployment.
+##  This layer adds the HTTP server capabilities to the Binder deployment.
 
 ##
 RUN if test -d ./tmp; then rm -rf ./tmp; fi && \

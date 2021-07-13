@@ -8,6 +8,12 @@ USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
+RUN mkdir tmp
+
+COPY requirements.txt ./tmp/requirements.txt 
+
+RUN conda install --file ./tmp/requirements.txt 
+
 ENV STATIC_FILE_HANDLER_DOC_ROOT ${HOME}/public_html
 #  This environment variable specifies the document root for HTML files.
 

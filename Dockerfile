@@ -30,8 +30,3 @@ pip install ./tmp/etc_jupyterlab_telemetry/dist/etc_jupyterlab_telemetry-*-py3-n
 
 RUN if test -d ./tmp; then rm -rf ./tmp; fi
 #  Finally, remove the ./tmp directory if it exists.
-
-ARG NB_USER
-ARG NB_UID
-ENV USER ${NB_USER}
-ENV HOME /home/${NB_USER}

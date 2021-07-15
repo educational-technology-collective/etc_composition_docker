@@ -25,3 +25,4 @@ jupyter_client
 jupyterlab_server
 ipython_genutils
 jupyter-server-proxy
+build

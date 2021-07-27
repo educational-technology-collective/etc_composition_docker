@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 
 <head>
-  <script src=""></script>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
   <title>ETC JupyterLab Binder</title>
 </head>
 
-<body>
-  <h1>ETC JupyterLab Binder</h1>
+<body style='background: #00274C'>
 
-  <h2>Regression Part 1</h2>
-  <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ShMzFyInW0" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+  <h1 style='background-color: #989C97; color: #00274C;
+  margin-bottom: 20px;' id='header'>
+    <img style='margin: 5px;' src="../resources/u-m_logo-hex.png" height="100px">
+    ETC JupyterLab Binder: Lecture Part A
+  </h1>
+
+  <div style='text-align:center'>
+      <video id='lecture' width="55%"
+             disablepictureinpicture>
+        <source src="../resources/flower.webm"
+                type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
   </div>
 
-  <a
-    href="https://mybinder.org/v2/gh/educational-technology-collective/etc_composition_binder/main?urlpath=lab/tree/week2_1b_regression_sampling_interpretation.ipynb">Week
-    2 1B Regression Sampling Interpretation</a>
+  <div style="text-align: center;">
+     <button class="btn btn-secondary" id='play_button' type='button'>Play ▶️</button>
+  </div>
+
+  <div style='margin: 10px'>
+  <a class='btn btn-secondary' id='next_button'
+  type='button' style='display: none;' href="https://www.google.com">
+  Click to Continue ➡️
+  </a>
+  </div>
+
+    <script src="../scripts/custom-play.js"></script>
+    <script src="../scripts/prevent-seeking.js"></script>
+    <script src="../scripts/load-video.js"></script>
+
 </body>
 
 </html>

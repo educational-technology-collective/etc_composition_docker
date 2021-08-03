@@ -1,13 +1,13 @@
-// import { AWSAPIGatewayWrapper } from "@educational-technology-collective/etc_http_aws_api_gateway_wrapper";
-//
-// let timestamp: number = Date.now();
-//
-// let awsAPIGatewayWrapper: AWSAPIGatewayWrapper = new AWSAPIGatewayWrapper(
-//     {
-//         url: "https://example.com",
-//         bucket: "the-name-of-the-bucket",
-//         path: "the-path", // e.g., path/to/resource
-//     });
+import { AWSAPIGatewayWrapper } from "./scripts/etc_http_aws_api_gateway_wrapper";
+
+let number = Date.now();
+
+let awsAPIGatewayWrapper = new AWSAPIGatewayWrapper(
+    {
+        url: "https://telemetry.mentoracademy.org",
+        bucket: "telemetry-edtech-labs-si-umich-edu",
+        path: "dev/liwarren", // e.g., path/to/resource
+    });
 
 var playButton = document.getElementById("play_button");
 // Event listener for the play/pause button

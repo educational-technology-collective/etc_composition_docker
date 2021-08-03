@@ -9,7 +9,7 @@ ENV STATIC_FILE_HANDLER_DOC_ROOT ${HOME}/public_html
 
 COPY requirements.txt ./tmp/requirements.txt 
 COPY ["resources", "Untitled.ipynb", "./"]
-COPY public_html ./public_html/
+COPY ["public_html", "scripts", "./public_html/"]
 
 RUN conda install --file ./tmp/requirements.txt && \
 if test -d ./tmp; then rm -rf ./tmp; fi && mkdir ./tmp && \

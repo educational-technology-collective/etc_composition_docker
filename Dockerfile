@@ -24,4 +24,3 @@ pip install ./tmp/etc_jupyterlab_telemetry/dist/etc_jupyterlab_telemetry-*-py3-n
 if test -d ./tmp; then rm -rf ./tmp; fi && chown -R ${NB_UID} ${HOME}
 
 USER ${NB_USER}
-RUN touch me
